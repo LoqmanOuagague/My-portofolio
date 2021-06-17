@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,31 +17,34 @@
         <div class="left">
             <img src="css/imgs/arrow-left.svg" alt="">
             <h3>
-                <a href="./index.html">Home</a>
+                <a href="./index.php">Home</a>
             </h3>
         </div>
-        <h1 class="left">Coditor</h1>
+        <h1 class="left">Curl</h1>
     </header>
     <div class="container">
         <div class="left">
-            <img src="css/imgs/coditor-full-shot.png" alt="">
+            <img src="css/imgs/curl-fuul-shot.png" alt="">
         </div>
         <div class="right">
             <h3>Description</h3>
-            <p>It is a landing page template for a code editor called Coditor</p>
+            <p>It is a link shortener</p>
             <button class="source-code">
-                <a href="https://github.com/LoqmanOuagague/landing-page-for-a-code-editor" target="_blank">
+                <a href="https://github.com/LoqmanOuagague/Curl-link-shortener" target="_blank">
                     Source code
                 </a>
             </button>
             <button class="online-demo">
-                <a href="https://loqmanouagague.github.io/landing-page-for-a-code-editor/" target="_blank">
+                <a href="http://curl-link-shortener.herokuapp.com/" target="_blank">
                     Online Demo
                 </a>
             </button>
             <h3>Technologies</h3>
             <ul>
-                
+                <li>
+                    <img src="css/imgs/PHP-logo.svg" alt="" width="25" height="25" />
+                    <span>PHP</span>
+                </li>
                 <li>
                     <img src="css/imgs/html5.svg" alt="" width="25" height="25" />
                     <span>HTML 5</span>

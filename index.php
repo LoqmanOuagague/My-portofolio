@@ -111,7 +111,7 @@
                     <img src="css/imgs/curl.png" alt="">
                     <h2>Curl link shortener</h2>
                     <button>
-                        <a href="./curl.html">
+                        <a href="./curl.php">
                             More details
                         </a>
                     </button>
@@ -120,7 +120,7 @@
                     <img src="css/imgs/coditor.png" alt="">
                     <h2>Coditor</h2>
                     <button>
-                        <a href="./coditor.html">
+                        <a href="./coditor.php">
                             More details
                         </a>
                     </button>

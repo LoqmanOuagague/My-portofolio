@@ -1,0 +1,169 @@
+header section.logo span {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+header nav ul {
+  list-style: none;
+  font-size: 18px;
+  color: #fff;
+}
+header nav ul li {
+  float: left;
+  padding: 5px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0);
+  margin-left: 80px;
+  cursor: pointer;
+}
+header nav ul li a {
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  border-bottom: 2px solid #1c7330;
+  color: #1c7330;
+}
+.container > main > div {
+  width: 44%;
+}
+.container > main > .left > h1 > span {
+  color: #1d7732;
+}
+.container > main > .left > h2 {
+  color: rgba(0, 0, 0, 0.78);
+}
+.container > main > .left > p,
+.container > section#about-me p {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 6px;
+  line-height: 155%;
+}
+.container > main > .left > button {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+
+  background: #0f6bff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-top: 13px;
+  transition: all 0.25s ease-in-out;
+}
+.container > main > .left > button a {
+  color: #fff;
+}
+.container > main > .left > button:hover {
+  background: #fff;
+
+  border: 1px solid #0f6bff;
+}
+.container > main > .left > button:hover a {
+  color: #0f6bff;
+}
+.container > section {
+  margin-top: 20%;
+}
+.container > section#about-me > div.left > img {
+  width: 93%;
+  height: 460.5px;
+}
+.container > section#about-me > .left {
+  width: 50%;
+}
+.container > section#about-me h2 {
+  margin-top: 30px;
+}
+.container > section#about-me ul {
+  list-style: none;
+  margin-top: 10px;
+}
+.container > section#about-me ul li {
+  float: left;
+  margin-right: 40px;
+}
+.container > section#about-me ul li img {
+  margin: -5px 0;
+}
+#contact-me .title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  color: #2e2e2e;
+  margin-top: 70px;
+}
+#contact-me-form {
+  margin-top: 50px;
+  width: 90%;
+}
+#contact-me-form * {
+  display: block;
+}
+#contact-me-form label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2e2e2e;
+}
+#contact-me-form input,
+#contact-me-form textarea {
+  border: 1px solid #2e2e2e;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+#contact-me-form input:focus,
+#contact-me-form textarea:focus {
+  box-shadow: 0 0 4px 0px #24943e;
+  border: 1px solid #24943e;
+}
+#contact-me-form button * {
+  display: inline;
+}
+#contact-me-form button,
+#my-projects button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #24943e;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  text-align: center;
+  font-weight: bold;
+  transition: all ease-in-out 0.25s;
+}
+#my-projects button a {
+  color: #fff;
+}
+#contact-me-form button:hover,
+#my-projects button:hover {
+  background-color: #fff;
+  color: #24943e;
+  border: 2px solid;
+}
+#my-projects button:hover a {
+  color: #24943e;
+}
+#contact-me .right {
+  margin-top: 7%;
+}
+#my-projects h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#my-projects > .portofolio > div {
+  width: 32%;
+  padding: 5px;
+  margin-right: 1.34%;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px #e3e3e3a8;
+  border: 1px solid #e3e3e3;
+  float: left;
+}
+#my-projects > .portofolio > div > img {
+  width: 100%;
+  border: 1px solid #eaeaea;
+}

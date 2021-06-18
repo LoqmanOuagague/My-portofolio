@@ -87,17 +87,21 @@
         <section id="contact-me">
             <h1 class="title">Contact me </h1>
             <div class="left">
-                <form action="" id="contact-me-form">
+
+                <form id="contact-me-form">
+                    <div id="alert"></div>
+                    <br>
+                    <br>
                     <label>Your name</label>
-                    <input type="text">
+                    <input type="text" name="name">
                     <label>Your e-mail address</label>
-                    <input type="text">
+                    <input type="text" name="email">
                     <label>Your e-mail message</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button class="send">
-                        Send
-                    </button>
+                    <textarea name="message"></textarea>
                 </form>
+                <button class="send" id="send">
+                    Send
+                </button>
             </div>
             <div class="right">
                 <img src="css/imgs/enelope-illustration.svg" alt="" width="548" height="447" />
@@ -129,6 +133,7 @@
             </section>
         </section>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

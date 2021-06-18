@@ -119,12 +119,9 @@ header nav ul li a:hover {
   box-shadow: 0 0 4px 0px #24943e;
   border: 1px solid #24943e;
 }
-#contact-me-form button * {
-  display: inline;
-}
-#contact-me-form button,
+button#send,
 #my-projects button {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-top: 20px;
   background-color: #24943e;
@@ -138,7 +135,7 @@ header nav ul li a:hover {
 #my-projects button a {
   color: #fff;
 }
-#contact-me-form button:hover,
+button#send:hover,
 #my-projects button:hover {
   background-color: #fff;
   color: #24943e;

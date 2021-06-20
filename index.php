@@ -84,30 +84,6 @@
             </div>
         </section>
         <div style="clear: both;"></div>
-        <section id="contact-me">
-            <h1 class="title">Contact me </h1>
-            <div class="left">
-
-                <form id="contact-me-form">
-                    <div id="alert"></div>
-                    <br>
-                    <br>
-                    <label>Your name</label>
-                    <input type="text" name="name">
-                    <label>Your e-mail address</label>
-                    <input type="text" name="email">
-                    <label>Your e-mail message</label>
-                    <textarea name="message"></textarea>
-                </form>
-                <button class="send" id="send">
-                    Send
-                </button>
-            </div>
-            <div class="right">
-                <img src="css/imgs/enelope-illustration.svg" alt="" width="548" height="447" />
-            </div>
-        </section>
-        <div style="clear: both;"></div>
         <section id="my-projects">
             <h1>My projects</h1>
             <section class="portofolio">
@@ -132,6 +108,31 @@
 
             </section>
         </section>
+        <div style="clear: both;"></div>
+        <section id="contact-me">
+            <h1 class="title">Contact me </h1>
+            <div class="left">
+
+                <form id="contact-me-form">
+                    <div id="alert"></div>
+                    <br>
+                    <br>
+                    <label>Your name</label>
+                    <input type="text" name="name">
+                    <label>Your e-mail address</label>
+                    <input type="text" name="email">
+                    <label>Your e-mail message</label>
+                    <textarea name="message"></textarea>
+                </form>
+                <button class="send" id="send">
+                    Send
+                </button>
+            </div>
+            <div class="right">
+                <img src="css/imgs/enelope-illustration.svg" alt="" width="548" height="447" />
+            </div>
+        </section>
+       
     </div>
     <script src="js/main.js"></script>
 </body>

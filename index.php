@@ -57,7 +57,7 @@
         <div style="clear: both;"></div>
         <section id="about-me">
             <div class="left">
-                <img src="css/imgs/My-photo.png" alt="">
+                <img src="./css/imgs/my-photo.jpg" alt="">
             </div>
             <div class="left">
                 <h1>About me</h1>

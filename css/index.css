@@ -3,16 +3,19 @@ header section.logo span {
   font-weight: 700;
   margin-left: 5px;
 }
+header nav {
+  width: 410px;
+}
 header nav ul {
   list-style: none;
   font-size: 18px;
   color: #fff;
+  display: flex;
+  justify-content: space-around;
 }
 header nav ul li {
-  float: left;
   padding: 5px;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0);
-  margin-left: 80px;
   cursor: pointer;
 }
 header nav ul li a {
@@ -23,6 +26,71 @@ header nav ul li a {
 header nav ul li a:hover {
   border-bottom: 2px solid #1c7330;
   color: #1c7330;
+}
+header .overlay{
+  position: absolute;
+    left: 0px;
+    top: 42px;
+    opacity: 0%;
+    display: none;
+    background-color: rgb(0, 0, 0);
+    height: calc(100vh - 42px); 
+    width: 62%;
+}
+header i.fas {
+  display: none;
+  font-size: 21px;
+}
+@media (max-width: 767px) {
+  header i.fas {
+    display: block;
+    cursor: pointer;
+  }
+  header nav{
+    position: absolute;
+    right: 0px;
+    top: 42px;
+    background-color: #fdfdfd;
+    height: calc(100vh - 42px);
+    width: 38%;
+    transform: translateX(calc(100% + 24px));
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 17px 25px 7px 17px #000;
+  }
+  header nav ul {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+  header nav ul li
+ {
+   opacity: 0;
+   transition:opacity 0.5s ease-in-out;
+ }
+
+}
+.show-links{transform: translateX(0);}
+@keyframes linksfade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  
+}
+@keyframes showoverlay {
+  from{
+    opacity: 0;
+  
+  }
+  to{
+    opacity: 53%;
+  
+  }
+  
 }
 .container > main > div {
   width: 44%;

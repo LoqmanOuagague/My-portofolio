@@ -7,16 +7,17 @@
     <title>Loqman Ouagague</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
     <header>
-        <section class="logo left">
+        <section class="logo">
             <span>Loqman Ouagague</span>
         </section>
-        <nav class="right">
+        <nav class="">
             <ul>
                 <li>
                     <a href="#about-me">
@@ -33,9 +34,11 @@
                         My projects
                     </a>
                 </li>
-
+                
             </ul>
         </nav>
+        <div class="overlay"></div>
+        <i class="fas fa-bars"></i>
     </header>
     <div class="container">
         <main>
@@ -132,7 +135,7 @@
                 <img src="css/imgs/enelope-illustration.svg" alt="" width="548" height="447" />
             </div>
         </section>
-       
+
     </div>
     <script src="js/main.js"></script>
 </body>

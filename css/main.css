@@ -13,11 +13,13 @@ html {
 }
 body {
   margin: 0;
+  overflow-x: hidden;
   background: #fcfcfc;
 }
 a {
   text-decoration: none;
 }
+/* To delelte */
 .right,
 .left {
   float: right;
@@ -26,30 +28,31 @@ a {
 .left {
   float: left;
 }
+/* End To delelte */
 .container {
   margin: 15.38% 9.51%;
   width: 80.98%;
 }
 header {
-  overflow: hidden;
   width: 100%;
   background-color: #fdfdfd;
-  position: fixed;
+
   padding: 10px;
-  top: 0px;
-  left: 0px;
   box-shadow: 0 0 3px 1px #00000029;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.alert-error{
-  background-color: hsl(0,81%,81%);
+.alert-error {
+  background-color: hsl(0, 81%, 81%);
   padding: 10px;
   border-radius: 5px;
-  color: hsl(0,81%,24%);
+  color: hsl(0, 81%, 24%);
   border: 1px solid;
   margin-bottom: 20px;
   margin-top: 38px;
 }
-.success{
+.success {
   background-color: hsl(133.9, 60.9%, 88.1%);
-color: hsl(133.9, 60.9%, 31.1%);
+  color: hsl(133.9, 60.9%, 31.1%);
 }

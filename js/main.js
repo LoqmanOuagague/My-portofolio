@@ -55,6 +55,7 @@ var links = document.querySelectorAll("header nav ul li");
 var overlay = document.querySelector('header .overlay');
 document.querySelector(".fa-bars").addEventListener("click", function () {
     nav.classList.toggle("show-links");
+   document.querySelector("body").classList.toggle("hide-y");
 
   // 
   overlay.style.display ='block';

@@ -41,6 +41,7 @@ header i.fas {
   display: none;
   font-size: 21px;
 }
+.hide-y{overflow-y: hidden;}
 @media (min-width:768px) {
   header .overlay{display: none !important;}
 }

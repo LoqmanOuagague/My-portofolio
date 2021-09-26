@@ -84,3 +84,8 @@ for (let index = 0; index < links.length; index++) {
    }
   });
 }
+overlay.addEventListener("click", function () {
+  if (window.innerWidth < 767) {
+   document.querySelector(".fa-bars").click();
+  }
+ });

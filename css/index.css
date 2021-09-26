@@ -3,6 +3,9 @@ header section.logo span {
   font-weight: 700;
   margin-left: 5px;
 }
+header  {
+  margin-bottom:30px;
+}
 header nav {
   width: 410px;
 }
@@ -27,30 +30,34 @@ header nav ul li a:hover {
   border-bottom: 2px solid #1c7330;
   color: #1c7330;
 }
-header .overlay{
+header .overlay {
   position: absolute;
-    left: 0px;
-    top: 42px;
-    opacity: 0%;
-    display: none;
-    background-color: rgb(0, 0, 0);
-    height: calc(100vh - 42px); 
-    width: calc(100% - 270px);
+  left: 0px;
+  top: 42px;
+  opacity: 0%;
+  display: none;
+  background-color: rgb(0, 0, 0);
+  height: calc(100vh - 42px);
+  width: calc(100% - 270px);
 }
 header i.fas {
   display: none;
   font-size: 21px;
 }
-.hide-y{overflow-y: hidden;}
-@media (min-width:768px) {
-  header .overlay{display: none !important;}
+.hide-y {
+  overflow-y: hidden;
+}
+@media (min-width: 768px) {
+  header .overlay {
+    display: none !important;
+  }
 }
 @media (max-width: 767px) {
   header i.fas {
     display: block;
     cursor: pointer;
   }
-  header nav{
+  header nav {
     position: absolute;
     right: 0px;
     top: 42px;
@@ -66,72 +73,86 @@ header i.fas {
     height: 100%;
     align-items: center;
   }
-  header nav ul li
- {
-   opacity: 0;
-   transition:opacity 0.5s ease-in-out;
- }
-
+  header nav ul li {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
 }
-.show-links{transform: translateX(0);}
+.show-links {
+  transform: translateX(0);
+}
 @keyframes linksfade {
-  from{
+  from {
     opacity: 0;
     transform: translateX(50px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
-  
 }
 @keyframes showoverlay {
-  from{
+  from {
     opacity: 0;
-  
   }
-  to{
+  to {
     opacity: 53%;
-  
   }
-  
 }
-.container > main > div {
+main > .container {
+  justify-content: space-between;
+  align-items: center;
+}
+main > .container > div {
   width: 44%;
 }
-.container > main > .left > h1 > span {
+main > .container > div:first-of-type > h1 > span {
   color: #1d7732;
 }
-.container > main > .left > h2 {
+main > .container > div:first-of-type > h2 {
   color: rgba(0, 0, 0, 0.78);
 }
-.container > main > .left > p,
+main > .container > div:first-of-type > p,
 .container > section#about-me p {
   color: rgba(0, 0, 0, 0.6);
   margin-top: 6px;
   line-height: 155%;
 }
-.container > main > .left > button {
+main > .container > div:first-of-type > button {
   padding: 10px;
   text-align: center;
   font-weight: bold;
-
   background: #0f6bff;
   border: 1px solid transparent;
   border-radius: 5px;
   margin-top: 13px;
   transition: all 0.25s ease-in-out;
 }
-.container > main > .left > button a {
+main > .container > div:first-of-type > button a {
   color: #fff;
 }
-.container > main > .left > button:hover {
+main > .container >  div:first-of-type > button:hover {
   background: #fff;
 
   border: 1px solid #0f6bff;
 }
-.container > main > .left > button:hover a {
+main > .container > div:first-of-type > button:hover a {
   color: #0f6bff;
+}
+@media (max-width:768px) {
+  main > .container > div:first-of-type > button{margin-top: 6px;padding: 7px;width: 200px;}
+  main > .container > div:first-of-type {text-align: center; width: 100%;}
+  main > .container > div:first-of-type > h1{font-size: 21px;}
+  main > .container > div:first-of-type > h2{font-size: 15px;} 
+  main > .container > div:first-of-type > p{font-size: 14px;}
+  main > .container > div:nth-of-type(2){display: none;}
+
+}
+@media (min-width:769px) and (max-width:992px) {
+  main > .container > div:first-of-type > button{margin-top: 6px;padding: 7px;}
+  main > .container > div:first-of-type > h1{font-size: 26px;}
+  main > .container > div:first-of-type > h2{font-size: 20px;} 
+  main > .container > div:first-of-type > p{font-size: 14px;}
 }
 .container > section {
   margin-top: 20%;

@@ -30,8 +30,39 @@ a {
 }
 /* End To delelte */
 .container {
-  margin: 15.38% 9.51%;
-  width: 80.98%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+
+}
+@media (max-width:767px) {
+  
+  main{margin-top:30px;}
+  .container{width: 80%;}
+  
+}
+@media (min-width:768px) {
+  .container {
+    width: 100%;
+    
+  }
+ 
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 992px;
+  }
+  main{margin-top: calc(50vw - 496px);}
+}
+@media (min-width:1200px) {
+  
+  .container {
+    width: 1170px;
+  }
+  main{margin-top: calc(50vw - 585px);}
 }
 header {
   width: 100%;
@@ -56,3 +87,4 @@ header {
   background-color: hsl(133.9, 60.9%, 88.1%);
   color: hsl(133.9, 60.9%, 31.1%);
 }
+.resp-img{width: 100%;}

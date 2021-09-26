@@ -40,9 +40,9 @@
         <div class="overlay"></div>
         <i class="fas fa-bars"></i>
     </header>
+    <main>
     <div class="container">
-        <main>
-            <div class="left">
+            <div>
                 <h1>I am <span>Loqman Ouagague</span>,</h1>
                 <h2>a front-end devolopper and a UI/UX designer</h2>
                 <p>If you are looking for a stunning website with a confortable price and a good client service then you
@@ -53,16 +53,17 @@
                     </a>
                 </button>
             </div>
-            <div class="right">
-                <img src="css/imgs/programmer-on-a-laptop.svg" alt="a programmer on a laptop" />
+            <div>
+                <img class="resp-img" src="css/imgs/programmer-on-a-laptop.svg" alt="a programmer on a laptop" />
             </div>
-        </main>
-        <div style="clear: both;"></div>
+        </div>
+    </main>
         <section id="about-me">
-            <div class="left">
-                <img src="./css/imgs/my-photo.jpg" alt="">
+           <div class="container">
+           <div>
+                <img src="./css/imgs/my-photo.jpg" class="resp-img" alt="">
             </div>
-            <div class="left">
+            <div>
                 <h1>About me</h1>
                 <p>
                     My name is Loqman Ouagague. I am a front-end developper and a UI/UX designer from Morocco. I started
@@ -85,6 +86,7 @@
                     </li>
                 </ul>
             </div>
+           </div>
         </section>
         <div style="clear: both;"></div>
         <section id="my-projects">

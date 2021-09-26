@@ -54,7 +54,7 @@ var nav = document.querySelector("header nav");
 var links = document.querySelectorAll("header nav ul li");
 var overlay = document.querySelector('header .overlay');
 document.querySelector(".fa-bars").addEventListener("click", function () {
-  nav.classList.toggle("show-links");
+    nav.classList.toggle("show-links");
 
   // 
   overlay.style.display ='block';
@@ -73,4 +73,13 @@ document.querySelector(".fa-bars").addEventListener("click", function () {
         "linksfade 0.5s ease-in-out forwards " + delay + "s";
     }
   }
+  
 });
+
+for (let index = 0; index < links.length; index++) {
+  links[index].addEventListener("click", function () {
+   if (window.innerWidth < 767) {
+    document.querySelector(".fa-bars").click();
+   }
+  });
+}

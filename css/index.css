@@ -35,11 +35,14 @@ header .overlay{
     display: none;
     background-color: rgb(0, 0, 0);
     height: calc(100vh - 42px); 
-    width: 62%;
+    width: calc(100% - 270px);
 }
 header i.fas {
   display: none;
   font-size: 21px;
+}
+@media (min-width:768px) {
+  header .overlay{display: none !important;}
 }
 @media (max-width: 767px) {
   header i.fas {
@@ -52,7 +55,7 @@ header i.fas {
     top: 42px;
     background-color: #fdfdfd;
     height: calc(100vh - 42px);
-    width: 38%;
+    width: 270px;
     transform: translateX(calc(100% + 24px));
     transition: transform 0.5s ease-in-out;
     box-shadow: 17px 25px 7px 17px #000;

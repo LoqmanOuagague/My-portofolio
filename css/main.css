@@ -32,7 +32,9 @@ a {
 .h1 {
   font-size: 32px;
 }
-.text-center{text-align: center;}
+.text-center {
+  text-align: center;
+}
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -40,20 +42,21 @@ a {
   margin-left: auto;
   display: flex;
 }
-.thumbnail{
+.thumbnail {
   border-radius: 10px;
   padding: 10px;
   background: #eee;
 }
 main,
-section#about-me {
+section#about-me,
+section#my-projects {
   margin-bottom: 150px;
 }
 @media (max-width: 767px) {
   main,
-  section#about-me {
+  section#about-me,
+  section#my-projects {
     margin-top: 30px;
-    
   }
   .container {
     width: 80%;
@@ -61,10 +64,11 @@ section#about-me {
 }
 @media (min-width: 768px) {
   .container {
-    width:100%;
+    width: 750px;
   }
   main,
-  section#about-me {
+  section#about-me,
+  section#my-projects {
     margin-top: calc(50vw - 375px);
   }
 }
@@ -74,7 +78,8 @@ section#about-me {
     width: 992px;
   }
   main,
-  section#about-me {
+  section#about-me,
+  section#my-projects {
     margin-top: calc(50vw - 496px);
   }
 }
@@ -83,7 +88,8 @@ section#about-me {
     width: 1170px;
   }
   main,
-  section#about-me {
+  section#about-me,
+  section#my-projects {
     margin-top: calc(50vw - 585px);
   }
 }

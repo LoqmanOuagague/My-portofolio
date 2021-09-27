@@ -113,25 +113,20 @@
         </div>
     </section>
     <section id="my-projects">
-        <h1>My projects</h1>
+        <h2 class="h1 text-center">My projects</h2>
+        <p class="text-center">This some projects that I did in my career as s front-end web developper or a UI/UX designer</p>
         <section class="portofolio">
             <div>
                 <img src="css/imgs/curl.png" alt="">
-                <h2>Curl link shortener</h2>
-                <button>
-                    <a href="./curl.php">
-                        More details
-                    </a>
-                </button>
+            </div>
+            <div>
+                <img src="css/imgs/curl.png" alt="">
             </div>
             <div>
                 <img src="css/imgs/coditor.png" alt="">
-                <h2>Coditor</h2>
-                <button>
-                    <a href="./coditor.php">
-                        More details
-                    </a>
-                </button>
+            </div>
+            <div>
+                <img src="css/imgs/coditor.png" alt="">
             </div>
 
         </section>

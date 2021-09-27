@@ -113,7 +113,8 @@ main > .container > div:first-of-type > h2 {
   color: rgba(0, 0, 0, 0.78);
 }
 main > .container > div:first-of-type > p,
-section#about-me > .container p {
+section#about-me > .container p,
+#my-projects p {
   color: rgba(0, 0, 0, 0.6);
   margin-top: 6px;
   line-height: 161.8%;
@@ -186,6 +187,9 @@ section#about-me .my-skills {
 section#about-me .skill {
   margin-top: 20px;
 }
+section#about-me .skill-title {
+  margin-bottom: 4px;
+}
 section#about-me .skill-lvl {
   background: #ededed;
   border-radius: 2px;
@@ -201,12 +205,12 @@ section#about-me .skill-lvl .progress-bar {
   section#about-me > .container {
     flex-direction: column;
   }
-  
+
   section#about-me .h1 {
     font-size: 20px;
   }
   section#about-me p {
-    font-size: 12px;
+    font-size: 14px;
   }
   section#about-me .h1:nth-of-type(2) {
     margin-top: 6px;
@@ -220,7 +224,7 @@ section#about-me .skill-lvl .progress-bar {
   section#about-me > .container {
     flex-direction: column;
   }
- 
+
   section#about-me .h1 {
     font-size: 26px;
   }
@@ -231,17 +235,30 @@ section#about-me .skill-lvl .progress-bar {
     font-size: 15px;
   }
 }
-@media (min-width:767px) {
+@media (min-width: 767px) {
   section#about-me p {
     font-size: 16px;
   }
   section#about-me .skill {
     font-size: 16px;
   }
+
+  section#about-me .container > div:first-of-type {
+    margin: auto;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
   section#about-me > .container {
     flex-direction: row;
   }
-  section#about-me .container > div:first-of-type{margin-right: 15px;}
+  section#about-me > .container > div:first-of-type {
+    width: 50%;
+    margin-right: 15px;
+  }
+  section#about-me > .container > div:nth-of-type(2) {
+    width: 50%;
+  }
 }
 #contact-me .title {
   text-align: center;
@@ -277,8 +294,8 @@ section#about-me .skill-lvl .progress-bar {
   box-shadow: 0 0 4px 0px #24943e;
   border: 1px solid #24943e;
 }
-button#send,
-#my-projects button {
+
+button#send {
   width: 90%;
   padding: 10px;
   margin-top: 20px;
@@ -290,35 +307,67 @@ button#send,
   font-weight: bold;
   transition: all ease-in-out 0.25s;
 }
-#my-projects button a {
-  color: #fff;
-}
-button#send:hover,
-#my-projects button:hover {
+
+button#send:hover {
   background-color: #fff;
   color: #24943e;
   border: 2px solid;
 }
-#my-projects button:hover a {
-  color: #24943e;
-}
 #contact-me .right {
   margin-top: 7%;
 }
-#my-projects h1 {
-  text-align: center;
-  margin-bottom: 50px;
+
+#my-projects .h1 {
+  margin-bottom: 10px;
 }
-#my-projects > .portofolio > div {
-  width: 32%;
-  padding: 5px;
-  margin-right: 1.34%;
-  border-radius: 5px;
-  box-shadow: 0 0 3px 1px #e3e3e3a8;
-  border: 1px solid #e3e3e3;
-  float: left;
+#my-projects p {
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+#my-projects section.portofolio {
+  display: grid;
+  padding: 0 15px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 #my-projects > .portofolio > div > img {
   width: 100%;
   border: 1px solid #eaeaea;
+}
+@media (max-width: 575px) {
+  #my-projects .h1 {
+    font-size: 20px;
+  }
+  #my-projects p {
+    font-size: 14px;
+  }
+  #my-projects section.portofolio {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 576px) {
+  #my-projects .h1 {
+    font-size: 26px;
+  }
+  #my-projects p {
+    font-size: 14px;
+  }
+  #my-projects section.portofolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  #my-projects p {
+    font-size: 16px;
+  }
+  #my-projects section.portofolio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  #my-projects section.portofolio {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    width: 100%;
+  }
 }

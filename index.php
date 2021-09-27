@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-    
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
     <title>Loqman Ouagague</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">

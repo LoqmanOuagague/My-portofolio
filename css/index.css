@@ -338,12 +338,16 @@ button#send:hover {
   #my-projects .h1 {
     font-size: 20px;
   }
+  body{background-color: blue;}
   #my-projects p {
     font-size: 14px;
     color: red;
   }
   #my-projects section.portofolio {
     grid-template-columns: repeat(1, 1fr);
+    -webkit-grid-template-columns: repeat(1, 1fr);
+    -moz-grid-template-columns: repeat(1, 1fr);
+    -ms-grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (min-width: 576px) {
@@ -355,6 +359,9 @@ button#send:hover {
   }
   #my-projects section.portofolio {
     grid-template-columns: repeat(2, 1fr);
+    -webkit-grid-template-columns: repeat(2, 1fr);
+    -moz-grid-template-columns: repeat(2, 1fr);
+    -ms-grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 768px) {
@@ -363,11 +370,17 @@ button#send:hover {
   }
   #my-projects section.portofolio {
     grid-template-columns: repeat(3, 1fr);
+    -webkit-grid-template-columns: repeat(3, 1fr);
+    -moz-grid-template-columns: repeat(3, 1fr);
+    -ms-grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 992px) {
   #my-projects section.portofolio {
     grid-template-columns: repeat(4, 1fr);
+    -webkit-grid-template-columns: repeat(4, 1fr);
+    -moz-grid-template-columns: repeat(4, 1fr);
+    -ms-grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
     width: 100%;
   }

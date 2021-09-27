@@ -257,7 +257,7 @@ section#about-me .skill-lvl .progress-bar {
     width: 50%;
   }
 }
-section#contact-me .container{align-items: center;}
+section#contact-me .container{align-items: center;margin-top: 20px;}
 #contact-me .title {
 
   font-weight: 600;
@@ -388,4 +388,23 @@ button#send:hover {
     margin: 0 auto;
     width: 100%;
   }
+}
+footer{
+  background: #24943e;
+  padding-bottom: 20px;
+}
+footer img{width: 101vw;}
+footer .container{
+  margin-top: 40px;
+justify-content: space-between;
+}
+footer .container div{color: white;
+font-size: 17px;
+font-weight: bold;}
+@media (max-width:768px) {
+  footer .container{
+   flex-direction: column;
+   text-align: center;
+  }
+  footer .container > div:not(:first-of-type){margin-top: 20px;}
 }

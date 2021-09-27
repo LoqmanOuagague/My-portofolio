@@ -114,7 +114,7 @@
     </section>
     <section id="my-projects">
         <h2 class="h1 text-center">My projects</h2>
-        <p class="text-center">This some projects that I did in my career as s front-end web developper or a UI/UX designer</p>
+        <p class="text-center">These are some projects that I did in my career as a front-end web developper or a UI/UX designer</p>
         <section class="portofolio">
             <div>
                 <img src="css/imgs/curl.png" alt="">
@@ -150,13 +150,21 @@
                 <button class="send" id="send">
                     Send
                 </button>
+                <div class="h1 text-center" style="margin-top: 30px;color: #24943e;">OR</div>
+                <div class="text-center" >Contact me in this email address: <strong>loqman.ouagague@gmail.com</strong></div>
             </div>
             <div>
                 <img src="css/imgs/enelope-illustration.svg" alt="" class="resp-img" />
             </div>
         </div>
     </section>
-
+    <footer>
+        <img src="css/imgs/wave.svg"  alt="">
+        <div class="container">
+            <div>All copyrights are reserved &copy; <?php echo date('Y'); ?></div>
+            <div>Designed and Programmed by Loqman Ouagague</div>
+        </div>
+    </footer>
     </div>
     <script src="js/main.js"></script>
 </body>

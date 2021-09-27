@@ -59,13 +59,13 @@
         </div>
     </main>
     <section id="about-me">
-    <h2 class="h1 text-center">About me</h2>
+        <h2 class="h1 text-center">About me</h2>
         <div class="container">
             <div>
                 <img src="./css/imgs/my-photo.jpg" class="resp-img thumbnail" alt="">
             </div>
             <div>
-                
+
                 <p>
                     My name is Loqman Ouagague. I am a front-end developper and a UI/UX designer from Morocco. I started
                     learning programming when I was 11 years old. I have a good experience in web design that lets me
@@ -131,28 +131,29 @@
 
         </section>
     </section>
-    <div style="clear: both;"></div>
     <section id="contact-me">
-        <h1 class="title">Contact me </h1>
-        <div class="left">
+        <h2 class="title h1 text-center">Contact me </h2>
+        <div class="container">
+            <div>
 
-            <form id="contact-me-form">
-                <div id="alert"></div>
-                <br>
-                <br>
-                <label>Your name</label>
-                <input type="text" name="name">
-                <label>Your e-mail address</label>
-                <input type="text" name="email">
-                <label>Your e-mail message</label>
-                <textarea name="message"></textarea>
-            </form>
-            <button class="send" id="send">
-                Send
-            </button>
-        </div>
-        <div class="right">
-            <img src="css/imgs/enelope-illustration.svg" alt="" width="548" height="447" />
+                <form id="contact-me-form">
+                    <div id="alert"></div>
+                    <br>
+                    <br>
+                    <label>Your name</label>
+                    <input type="text" name="name">
+                    <label>Your e-mail address</label>
+                    <input type="text" name="email">
+                    <label>Your e-mail message</label>
+                    <textarea name="message"></textarea>
+                </form>
+                <button class="send" id="send">
+                    Send
+                </button>
+            </div>
+            <div>
+                <img src="css/imgs/enelope-illustration.svg" alt="" class="resp-img" />
+            </div>
         </div>
     </section>
 

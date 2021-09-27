@@ -49,13 +49,15 @@ a {
 }
 main,
 section#about-me,
-section#my-projects {
+section#my-projects,
+section#contact-me {
   margin-bottom: 150px;
 }
 @media (max-width: 767px) {
   main,
   section#about-me,
-  section#my-projects {
+  section#my-projects,
+  section#contact-me {
     margin-top: 30px;
   }
   .container {
@@ -68,7 +70,8 @@ section#my-projects {
   }
   main,
   section#about-me,
-  section#my-projects {
+  section#my-projects,
+  section#contact-me {
     margin-top: calc(50vw - 375px);
   }
 }
@@ -79,7 +82,8 @@ section#my-projects {
   }
   main,
   section#about-me,
-  section#my-projects {
+  section#my-projects,
+  section#contact-me {
     margin-top: calc(50vw - 496px);
   }
 }
@@ -89,7 +93,8 @@ section#my-projects {
   }
   main,
   section#about-me,
-  section#my-projects {
+  section#my-projects,
+  section#contact-me {
     margin-top: calc(50vw - 585px);
   }
 }
@@ -118,4 +123,21 @@ header {
 }
 .resp-img {
   width: 100%;
+}
+
+@media (max-width: 575px) {
+  .h1 {
+    font-size: 20px;
+  }
+
+}
+@media (min-width: 576px) {
+  .h1 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) {
+  .h1 {
+    font-size: 32px;
+  }
 }

@@ -99,11 +99,11 @@ header i.fas {
     opacity: 53%;
   }
 }
-main > .container {
+main > .container , section#contact-me .container{
   justify-content: space-between;
   align-items: center;
 }
-main > .container > div {
+main > .container > div{
   width: 44%;
 }
 main > .container > div:first-of-type > h1 > span {
@@ -206,9 +206,7 @@ section#about-me .skill-lvl .progress-bar {
     flex-direction: column;
   }
 
-  section#about-me .h1 {
-    font-size: 20px;
-  }
+
   section#about-me p {
     font-size: 14px;
   }
@@ -225,9 +223,8 @@ section#about-me .skill-lvl .progress-bar {
     flex-direction: column;
   }
 
-  section#about-me .h1 {
-    font-size: 26px;
-  }
+
+  
   section#about-me p {
     font-size: 14px;
   }
@@ -260,16 +257,15 @@ section#about-me .skill-lvl .progress-bar {
     width: 50%;
   }
 }
+section#contact-me .container{align-items: center;}
 #contact-me .title {
-  text-align: center;
+
   font-weight: 600;
-  font-size: 36px;
   color: #2e2e2e;
-  margin-top: 70px;
 }
 #contact-me-form {
-  margin-top: 50px;
-  width: 90%;
+  margin-top: 20px;
+  width: 100%;
 }
 #contact-me-form * {
   display: block;
@@ -296,7 +292,7 @@ section#about-me .skill-lvl .progress-bar {
 }
 
 button#send {
-  width: 90%;
+  width: 100%;
   padding: 10px;
   margin-top: 20px;
   background-color: #24943e;
@@ -316,7 +312,21 @@ button#send:hover {
 #contact-me .right {
   margin-top: 7%;
 }
-
+@media (max-width:575px) {
+  section#contact-me .container > div:not(:first-of-type){display: none;}
+  section#contact-me .container > div:first-of-type{width: 100%;}
+}
+@media (min-width:576px) {
+  section#contact-me .container > div:not(:first-of-type){display: none;}
+  section#contact-me .container > div{width: 100%;}
+}
+@media (min-width:768px) {
+  section#contact-me .container > div:not(:first-of-type){display: block;}
+  section#contact-me .container > div{width: 49%;}
+}
+@media (min-width:992px) {
+  section#contact-me .container{align-items: flex-start;}
+}
 #my-projects .h1 {
   margin-bottom: 10px;
 }
@@ -335,9 +345,7 @@ button#send:hover {
   border: 1px solid #eaeaea;
 }
 @media (max-width: 575px) {
-  #my-projects .h1 {
-    font-size: 20px;
-  }
+ 
   #my-projects p {
     font-size: 14px;
   }
@@ -349,9 +357,7 @@ button#send:hover {
   }
 }
 @media (min-width: 576px) {
-  #my-projects .h1 {
-    font-size: 26px;
-  }
+ 
   #my-projects p {
     font-size: 14px;
   }

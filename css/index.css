@@ -340,6 +340,7 @@ button#send:hover {
   }
   #my-projects p {
     font-size: 14px;
+    color: red;
   }
   #my-projects section.portofolio {
     grid-template-columns: repeat(1, 1fr);

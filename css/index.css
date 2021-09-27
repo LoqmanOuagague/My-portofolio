@@ -3,8 +3,8 @@ header section.logo span {
   font-weight: 700;
   margin-left: 5px;
 }
-header  {
-  margin-bottom:30px;
+header {
+  margin-bottom: 100px;
 }
 header nav {
   width: 410px;
@@ -113,10 +113,10 @@ main > .container > div:first-of-type > h2 {
   color: rgba(0, 0, 0, 0.78);
 }
 main > .container > div:first-of-type > p,
-.container > section#about-me p {
+section#about-me > .container p {
   color: rgba(0, 0, 0, 0.6);
   margin-top: 6px;
-  line-height: 155%;
+  line-height: 161.8%;
 }
 main > .container > div:first-of-type > button {
   padding: 10px;
@@ -131,7 +131,7 @@ main > .container > div:first-of-type > button {
 main > .container > div:first-of-type > button a {
   color: #fff;
 }
-main > .container >  div:first-of-type > button:hover {
+main > .container > div:first-of-type > button:hover {
   background: #fff;
 
   border: 1px solid #0f6bff;
@@ -139,43 +139,109 @@ main > .container >  div:first-of-type > button:hover {
 main > .container > div:first-of-type > button:hover a {
   color: #0f6bff;
 }
-@media (max-width:768px) {
-  main > .container > div:first-of-type > button{margin-top: 6px;padding: 7px;width: 200px;}
-  main > .container > div:first-of-type {text-align: center; width: 100%;}
-  main > .container > div:first-of-type > h1{font-size: 21px;}
-  main > .container > div:first-of-type > h2{font-size: 15px;} 
-  main > .container > div:first-of-type > p{font-size: 14px;}
-  main > .container > div:nth-of-type(2){display: none;}
+@media (max-width: 768px) {
+  main > .container > div:first-of-type > button {
+    margin-top: 6px;
+    padding: 7px;
+    width: 200px;
+  }
+  main > .container > div:first-of-type {
+    text-align: center;
+    width: 100%;
+  }
+  main > .container > div:first-of-type > h1 {
+    font-size: 21px;
+  }
+  main > .container > div:first-of-type > h2 {
+    font-size: 15px;
+  }
+  main > .container > div:first-of-type > p {
+    font-size: 14px;
+  }
+  main > .container > div:nth-of-type(2) {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  main > .container > div:first-of-type > button {
+    margin-top: 6px;
+    padding: 7px;
+  }
+  main > .container > div:first-of-type > h1 {
+    font-size: 26px;
+  }
+  main > .container > div:first-of-type > h2 {
+    font-size: 20px;
+  }
+  main > .container > div:first-of-type > p {
+    font-size: 14px;
+  }
+}
+section#about-me .h1:first-of-type {
+  margin-bottom: 20px;
+}
+section#about-me .my-skills {
+  margin-top: 20px;
+}
+section#about-me .skill {
+  margin-top: 20px;
+}
+section#about-me .skill-lvl {
+  background: #ededed;
+  border-radius: 2px;
+}
+section#about-me .skill-lvl .progress-bar {
+  background-color: hsl(134, 42%, 50%);
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 2px;
+  color: #fff;
+}
+@media (max-width: 575px) {
+  section#about-me > .container {
+    flex-direction: column;
+  }
+  
+  section#about-me .h1 {
+    font-size: 20px;
+  }
+  section#about-me p {
+    font-size: 12px;
+  }
+  section#about-me .h1:nth-of-type(2) {
+    margin-top: 6px;
+  }
 
+  section#about-me .skill {
+    font-size: 14px;
+  }
 }
-@media (min-width:769px) and (max-width:992px) {
-  main > .container > div:first-of-type > button{margin-top: 6px;padding: 7px;}
-  main > .container > div:first-of-type > h1{font-size: 26px;}
-  main > .container > div:first-of-type > h2{font-size: 20px;} 
-  main > .container > div:first-of-type > p{font-size: 14px;}
+@media (min-width: 576px) {
+  section#about-me > .container {
+    flex-direction: column;
+  }
+ 
+  section#about-me .h1 {
+    font-size: 26px;
+  }
+  section#about-me p {
+    font-size: 14px;
+  }
+  section#about-me .skill {
+    font-size: 15px;
+  }
 }
-.container > section {
-  margin-top: 20%;
-}
-.container > section#about-me > div.left > img {
-  width: 93%;
-}
-.container > section#about-me > .left {
-  width: 50%;
-}
-.container > section#about-me h2 {
-  margin-top: 30px;
-}
-.container > section#about-me ul {
-  list-style: none;
-  margin-top: 10px;
-}
-.container > section#about-me ul li {
-  float: left;
-  margin-right: 40px;
-}
-.container > section#about-me ul li img {
-  margin: -5px 0;
+@media (min-width:767px) {
+  section#about-me p {
+    font-size: 16px;
+  }
+  section#about-me .skill {
+    font-size: 16px;
+  }
+  section#about-me > .container {
+    flex-direction: row;
+  }
+  section#about-me .container > div:first-of-type{margin-right: 15px;}
 }
 #contact-me .title {
   text-align: center;

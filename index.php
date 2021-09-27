@@ -34,14 +34,14 @@
                         My projects
                     </a>
                 </li>
-                
+
             </ul>
         </nav>
         <div class="overlay"></div>
         <i class="fas fa-bars"></i>
     </header>
     <main>
-    <div class="container">
+        <div class="container">
             <div>
                 <h1>I am <span>Loqman Ouagague</span>,</h1>
                 <h2>a front-end devolopper and a UI/UX designer</h2>
@@ -58,85 +58,108 @@
             </div>
         </div>
     </main>
-        <section id="about-me">
-           <div class="container">
-           <div>
-                <img src="./css/imgs/my-photo.jpg" class="resp-img" alt="">
+    <section id="about-me">
+    <h2 class="h1 text-center">About me</h2>
+        <div class="container">
+            <div>
+                <img src="./css/imgs/my-photo.jpg" class="resp-img thumbnail" alt="">
             </div>
             <div>
-                <h1>About me</h1>
+                
                 <p>
                     My name is Loqman Ouagague. I am a front-end developper and a UI/UX designer from Morocco. I started
                     learning programming when I was 11 years old. I have a good experience in web design that lets me
                     design beautiful websites.
                 </p>
-                <h2>My skills</h2>
-                <ul>
-                    <li>
-                        <img src="css/imgs/pen-tool.svg" alt="" width="25" height="25" />
-                        <span>Prototyping</span>
-                    </li>
-                    <li>
-                        <img src="css/imgs/html5.svg" alt="" width="25" height="25" />
-                        <span>HTML 5</span>
-                    </li>
-                    <li>
-                        <img src="css/imgs/css3.svg" alt="" width="25" height="25" />
-                        <span>CSS 3</span>
-                    </li>
-                </ul>
+                <div class="my-skills">
+                    <h2 class="h1">My skills</h2>
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-title">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML 5</span>
+                            </div>
+                            <div class="skill-lvl">
+                                <div class="progress-bar" style="width: 90%;">
+                                    90%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-title">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS 3</span>
+                            </div>
+                            <div class="skill-lvl">
+                                <div class="progress-bar" style="width: 95%;">
+                                    95%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-title">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Prototyping</span>
+                            </div>
+                            <div class="skill-lvl">
+                                <div class="progress-bar" style="width: 75%;">
+                                    75%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-           </div>
-        </section>
-        <div style="clear: both;"></div>
-        <section id="my-projects">
-            <h1>My projects</h1>
-            <section class="portofolio">
-                <div>
-                    <img src="css/imgs/curl.png" alt="">
-                    <h2>Curl link shortener</h2>
-                    <button>
-                        <a href="./curl.php">
-                            More details
-                        </a>
-                    </button>
-                </div>
-                <div>
-                    <img src="css/imgs/coditor.png" alt="">
-                    <h2>Coditor</h2>
-                    <button>
-                        <a href="./coditor.php">
-                            More details
-                        </a>
-                    </button>
-                </div>
-
-            </section>
-        </section>
-        <div style="clear: both;"></div>
-        <section id="contact-me">
-            <h1 class="title">Contact me </h1>
-            <div class="left">
-
-                <form id="contact-me-form">
-                    <div id="alert"></div>
-                    <br>
-                    <br>
-                    <label>Your name</label>
-                    <input type="text" name="name">
-                    <label>Your e-mail address</label>
-                    <input type="text" name="email">
-                    <label>Your e-mail message</label>
-                    <textarea name="message"></textarea>
-                </form>
-                <button class="send" id="send">
-                    Send
+        </div>
+    </section>
+    <section id="my-projects">
+        <h1>My projects</h1>
+        <section class="portofolio">
+            <div>
+                <img src="css/imgs/curl.png" alt="">
+                <h2>Curl link shortener</h2>
+                <button>
+                    <a href="./curl.php">
+                        More details
+                    </a>
                 </button>
             </div>
-            <div class="right">
-                <img src="css/imgs/enelope-illustration.svg" alt="" width="548" height="447" />
+            <div>
+                <img src="css/imgs/coditor.png" alt="">
+                <h2>Coditor</h2>
+                <button>
+                    <a href="./coditor.php">
+                        More details
+                    </a>
+                </button>
             </div>
+
         </section>
+    </section>
+    <div style="clear: both;"></div>
+    <section id="contact-me">
+        <h1 class="title">Contact me </h1>
+        <div class="left">
+
+            <form id="contact-me-form">
+                <div id="alert"></div>
+                <br>
+                <br>
+                <label>Your name</label>
+                <input type="text" name="name">
+                <label>Your e-mail address</label>
+                <input type="text" name="email">
+                <label>Your e-mail message</label>
+                <textarea name="message"></textarea>
+            </form>
+            <button class="send" id="send">
+                Send
+            </button>
+        </div>
+        <div class="right">
+            <img src="css/imgs/enelope-illustration.svg" alt="" width="548" height="447" />
+        </div>
+    </section>
 
     </div>
     <script src="js/main.js"></script>
